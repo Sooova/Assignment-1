@@ -39,13 +39,6 @@ ul {
     object-position: top;
 }
 
-.circleBorder {
-    animation: animateBorder 0.5s linear;
-    animation-fill-mode: forwards;
-    border-bottom: 5px solid #F69C1E;
-    border-radius: 15%
-}
-
 @keyframes animateBorder {
     from {
         border-bottom: 5px solid #F69C1E;
@@ -70,6 +63,13 @@ ul {
     font-size: 60px;
     font-weight: 700;
     margin-right: 25px;
+}
+
+.nav ul li:hover {
+    animation: animateBorder 0.2s linear;
+    animation-fill-mode: forwards;
+    border-bottom: 5px solid #F69C1E;
+    border-radius: 15%
 }
 
 .nav ul li a {
